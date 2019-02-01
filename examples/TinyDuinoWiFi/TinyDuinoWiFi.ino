@@ -1,17 +1,18 @@
+/*
+  TinyDuino WiFi Tutorial
 
-/*************************************************************************
- * TinyDuino WiFi Tutorial:
- * Just a basic tutorial showing you how to connect to WiFi with the Wifi
- * TinyShield
- * 
- * Hardware by: TinyCircuits
- * Written by: Laverena Wienclaw
- * 
- * NOTE: There are a couple things you'll need to change for this to work!
- *
- * Initiated: Mon. 5/29/2018 
- * Updated: Tue. 06/15/2018
- ************************************************************************/
+  Just a basic tutorial showing you how to connect to WiFi with the Wifi
+  TinyShield
+
+  NOTE: There are a couple things you'll need to change for this to work!
+
+  Written 29 May 2018
+  By Laverena Wienclaw
+  Modified 07 January 2019
+  By Hunter Hykes
+
+  https://TinyCircuits.com
+*/
 
 // This library is for the wifi connection
 #include <WiFi101.h>

@@ -1,12 +1,19 @@
-/*************************************************************************
- * BMA250 TinyZero Accelerometer Internet of Things Project: 
- * This program uses the TinyZero with an accelerometer populated on it to 
- * connect to WiFi for a Cayenne Internet of Things application
- * 
- * Hardware by: TinyCircuits
- * BMA250 Library by: TinyCircuits
- * Code by: Laverena Wienclaw for TinyCircuits
- ************************************************************************/
+/*
+  TinyDuino WiFi Tutorial
+
+  BMA250 TinyZero Accelerometer Internet of Things Project: 
+  This program uses the TinyZero with an accelerometer populated on it to 
+  connect to WiFi for a Cayenne Internet of Things application.
+
+  NOTE: There are a couple things you'll need to change for this to work!
+
+  Written 21 November 2018
+  By Laverena Wienclaw
+  Modified 07 January 2019
+  By Hunter Hykes
+
+  https://TinyCircuits.com
+*/
 
 #include <Wire.h>         // For I2C communication with sensor
 #include <WiFi101.h>      // For connecting to WiFi
