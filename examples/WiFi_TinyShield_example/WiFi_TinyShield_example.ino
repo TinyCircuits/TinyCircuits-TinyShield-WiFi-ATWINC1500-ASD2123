@@ -1,5 +1,5 @@
 /*
-  TinyDuino WiFi Tutorial
+  TinyDuino WiFi TinyShield Example Sketch
 
   Just a basic tutorial showing you how to connect to WiFi with the Wifi
   TinyShield
