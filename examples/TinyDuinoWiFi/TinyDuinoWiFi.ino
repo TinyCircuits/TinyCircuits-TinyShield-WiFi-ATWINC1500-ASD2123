@@ -17,34 +17,42 @@
 // This library is for the wifi connection
 #include <WiFi101.h>
 
+/*********************** EDIT THIS SECTION TO MATCH YOUR INFO *************************/
 char ssid[] = "TinyCircuits";  //  your network SSID (name)
 char wifiPassword[] = "********";  // your network password
 
+// Define Serial object based on which TinyCircuits processor board is used.
+#if defined(ARDUINO_ARCH_SAMD)
+  #define SerialMonitorInterface SerialUSB
+#else
+  #define SerialMonitorInterface Serial
+#endif
+
 void setup() {
-  Serial.begin(9600);
+  SerialMonitorInterface.begin(9600);
   WiFi.setPins(8, 2, A3, -1); // VERY IMPORTANT FOR TINYDUINO
-  while(!Serial);
+  while(!SerialMonitorInterface);
 
   // Attempt to connect to Wifi network:
-  Serial.print("Connecting Wifi: ");
-  Serial.println(ssid);
+  SerialMonitorInterface.print("Connecting Wifi: ");
+  SerialMonitorInterface.println(ssid);
 
   // Connect to WiFi, and loop until connection is secured
   WiFi.begin(ssid, wifiPassword);
   while (WiFi.status() != WL_CONNECTED)
-    Serial.print(".");
+    SerialMonitorInterface.print(".");
     delay(500);
 
   // Print out the local IP address
-  Serial.println("");
-  Serial.println("WiFi connected");
-  Serial.println("IP address: ");
+  SerialMonitorInterface.println("");
+  SerialMonitorInterface.println("WiFi connected");
+  SerialMonitorInterface.println("IP address: ");
   IPAddress ip = WiFi.localIP();
-  Serial.println(ip);
+  SerialMonitorInterface.println(ip);
 }
 
 void loop()
 {
-  Serial.print("Main loop entered. Now that we're connected, let's do something cool.");
+  SerialMonitorInterface.print("Main loop entered. Now that we're connected, let's do something cool.");
   delay(60000); // Wait a minute before going back through main loop
 }
