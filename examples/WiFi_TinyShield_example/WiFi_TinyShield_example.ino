@@ -39,9 +39,11 @@ void setup() {
 
   // Connect to WiFi, and loop until connection is secured
   WiFi.begin(ssid, wifiPassword);
-  while (WiFi.status() != WL_CONNECTED)
+  while (WiFi.status() != WL_CONNECTED){
     SerialMonitorInterface.print(".");
     delay(500);
+  }
+    
 
   // Print out the local IP address
   SerialMonitorInterface.println("");

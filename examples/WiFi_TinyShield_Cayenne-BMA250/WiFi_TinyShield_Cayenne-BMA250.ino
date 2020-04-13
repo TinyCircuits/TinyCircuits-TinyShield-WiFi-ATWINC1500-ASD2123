@@ -100,9 +100,10 @@ void connectWifi(void){
   WiFi.begin(ssid, wifiPassword);
 
   // Loop until connection is secured
-  while (WiFi.status() != WL_CONNECTED)
+  while (WiFi.status() != WL_CONNECTED){
     SerialMonitorInterface.print(".");
     delay(500);
+  }
 
   // Success message and put WiFi in low power mode to save energy
   WiFi.maxLowPowerMode();
