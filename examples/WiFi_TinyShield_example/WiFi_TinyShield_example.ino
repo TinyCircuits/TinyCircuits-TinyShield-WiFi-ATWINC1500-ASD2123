@@ -18,7 +18,7 @@
 #include <WiFi101.h>
 
 /*********************** EDIT THIS SECTION TO MATCH YOUR INFO *************************/
-char ssid[] = "TinyCircuits";  //  your network SSID (name)
+char ssid[] = "TinyCircuits";  //  your 2.4GHz network SSID (name)
 char wifiPassword[] = "********";  // your network password
 
 // Define Serial object based on which TinyCircuits processor board is used.
