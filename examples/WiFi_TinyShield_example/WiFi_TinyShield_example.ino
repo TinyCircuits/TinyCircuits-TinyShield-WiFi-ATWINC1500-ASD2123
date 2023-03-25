@@ -55,6 +55,6 @@ void setup() {
 
 void loop()
 {
-  SerialMonitorInterface.print("Main loop entered. Now that we're connected, let's do something cool.");
+  SerialMonitorInterface.println("Main loop entered. Now that we're connected, let's do something cool.");
   delay(60000); // Wait a minute before going back through main loop
 }
