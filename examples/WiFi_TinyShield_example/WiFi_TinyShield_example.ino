@@ -18,7 +18,7 @@
 #include <WiFi101.h>
 
 /*********************** EDIT THIS SECTION TO MATCH YOUR INFO *************************/
-char ssid[] = "TinyCircuits";  //  your network SSID (name)
+char ssid[] = "TinyCircuits";  //  your 2.4GHz network SSID (name)
 char wifiPassword[] = "********";  // your network password
 
 // Define Serial object based on which TinyCircuits processor board is used.
@@ -55,6 +55,6 @@ void setup() {
 
 void loop()
 {
-  SerialMonitorInterface.print("Main loop entered. Now that we're connected, let's do something cool.");
+  SerialMonitorInterface.println("Main loop entered. Now that we're connected, let's do something cool.");
   delay(60000); // Wait a minute before going back through main loop
 }

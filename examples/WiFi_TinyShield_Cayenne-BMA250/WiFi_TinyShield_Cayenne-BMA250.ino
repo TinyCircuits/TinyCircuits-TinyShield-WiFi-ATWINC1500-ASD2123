@@ -21,7 +21,7 @@
 
 /*********************** EDIT THIS SECTION TO MATCH YOUR INFO *************************/
 // WiFi network information
-char ssid[] = "TinyCircuits";        //  your network SSID (name)
+char ssid[] = "TinyCircuits";        //  your 2.4GHz network SSID (name)
 char wifiPassword[] = "__________";  // your network password
 
 // Cayenne authentication info. This should be obtained from the Cayenne Dashboard.
